@@ -25,7 +25,22 @@ num2 = 100_000_000
 total = num1 + num2
 
 print(f'{total:,}')
+#(:,) you can specify formating opitions after 
+
 
 #3)CONTEXT MANAGERS 
 
-f = open()
+f = open('test.txt', 'r')
+
+file_contents = f.read()
+
+f.close()
+
+words = file_contents.split(' ')
+word_count = len(words)
+print(word_count)
+
+#
+
+
+
